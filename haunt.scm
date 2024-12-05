@@ -1,12 +1,13 @@
 (use-modules (haunt asset)
-             (haunt builder blog)
-             (haunt builder atom)
-             ;; (haunt builder assets)
+             (haunt builder flat-pages)
              (haunt reader commonmark)
              (haunt site))
 
+
+(define (my-template site title body)
+  body)
+
 (site #:title "Rockaway for Palestine"
       #:readers (list commonmark-reader)
-      #:builders (list (blog)
-                       (atom-feed)
-                       (atom-feeds-by-tag)))
+      #:build-directory "docs"
+      #:builders (list (flat-pages "in" #:template my-template)))
