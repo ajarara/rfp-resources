@@ -14,8 +14,8 @@
     (link (@ (rel "stylesheet")
              (href "https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css")))
     (body (@ (class "terminal"))
-          (div (@ (class "container")))
-          ,body)))
+          (div (@ (class "container"))
+               ,body))))
 
 (site #:title "Rockaway for Palestine"
       #:readers (list commonmark-reader)
