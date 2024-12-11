@@ -1,19 +1,20 @@
 body {
-  background-color: #f1e5cd
+    background-color: #f1e5cd;
+    margin: 1em;
 }
 
 .library {
     display: grid;
     grid-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-items: center;
 }
 
 figure {
   border: thin #c0c0c0 solid;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   max-width: 15rem;
-  margin: auto;
 }
 
 figcaption {
