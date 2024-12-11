@@ -14,7 +14,11 @@ figure {
   border: thin #c0c0c0 solid;
   display: flex;
   flex-direction: column;
-  max-width: 15rem;
+}
+
+.cover {
+    width: 16rem;
+    height: 20.66rem;
 }
 
 figcaption {
@@ -22,5 +26,9 @@ figcaption {
   color: #fff;
   font: italic smaller sans-serif;
   padding: 3px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
